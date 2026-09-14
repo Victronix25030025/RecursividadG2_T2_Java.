@@ -2,7 +2,7 @@ package recursividad;
 
 public class Recursividades {
     
-    // Método factorial previo
+    // --- TAREA 01: Factorial ---
     public int calcularFactorial(int num) {
         if (num == 0) {
             return 1;
@@ -10,7 +10,7 @@ public class Recursividades {
         return num * calcularFactorial(num - 1);
     }
 
-    // Ejercicio 1: Contar vocales
+    // --- TAREA 02: Ejercicio 1 - Contar vocales ---
     public int vocales(String cadena) {
         if (cadena.isEmpty()) {
             return 0;
@@ -20,7 +20,7 @@ public class Recursividades {
         return esVocal + vocales(cadena.substring(1));
     }
 
-    // Ejercicio 2: Sumar los dígitos de un entero
+    // --- TAREA 02: Ejercicio 2 - Sumar los dígitos de un número ---
     public int sumaDigitos(int numero) {
         if (numero < 10) {
             return numero;
@@ -28,7 +28,7 @@ public class Recursividades {
         return (numero % 10) + sumaDigitos(numero / 10);
     }
 
-    // Ejercicio 3: Sumar los primeros n enteros (S(n) = S(n-1) + n)
+    // --- TAREA 02: Ejercicio 3 - Sumar los primeros n enteros positivos ---
     public int sumaNumeros(int n) {
         if (n <= 1) {
             return n;

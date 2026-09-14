@@ -6,13 +6,20 @@ public class Recursividad {
     public static void main(String[] args) {
         Recursividades oRecursividades = new Recursividades();
 
-        System.out.println("=== TAREA 02: EJERCICIOS DE RECURSIVIDAD ===");
+        System.out.println("==========================================");
+        System.out.println("   PRACTICAS DE METODOS RECURSIVOS");
+        System.out.println("==========================================");
 
-        // 1. Prueba contar vocales
+        // --- TAREA 01 ---
+        int numFactorial = 5;
+        int resultadoFactorial = oRecursividades.calcularFactorial(numFactorial);
+        System.out.println("\n[Tarea 1] Factorial de " + numFactorial + ": " + resultadoFactorial);
+
+        // --- TAREA 02: Ejercicio 1 ---
         String texto = "programacion";
-        System.out.println("\n1. Numero de vocales en '" + texto + "': " + oRecursividades.vocales(texto));
+        System.out.println("\n[Tarea 2 - Ej 1] Numero de vocales en '" + texto + "': " + oRecursividades.vocales(texto));
 
-        // 2. Prueba suma de dígitos (encontrar el número con la suma mayor)
+        // --- TAREA 02: Ejercicio 2 ---
         int[] numeros = {123, 99, 456, 81};
         int mayorSuma = -1;
         int numeroMayor = 0;
@@ -24,10 +31,10 @@ public class Recursividad {
                 numeroMayor = num;
             }
         }
-        System.out.println("2. El numero con la mayor suma de digitos es: " + numeroMayor + " (Suma = " + mayorSuma + ")");
+        System.out.println("\n[Tarea 2 - Ej 2] Numero con mayor suma de digitos: " + numeroMayor + " (Suma = " + mayorSuma + ")");
 
-        // 3. Prueba suma de n enteros
+        // --- TAREA 02: Ejercicio 3 ---
         int n = 5;
-        System.out.println("3. Suma de los primeros " + n + " enteros: " + oRecursividades.sumaNumeros(n));
+        System.out.println("\n[Tarea 2 - Ej 3] Suma de los primeros " + n + " enteros positivos: " + oRecursividades.sumaNumeros(n));
     }
 }
